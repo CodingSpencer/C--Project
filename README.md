@@ -22,7 +22,7 @@
 
 - [W3Schools](https://www.w3schools.com/cpp/cpp_intro.asp)
 - [Github](https://github.com/CodingSpencer/music_player.git)
-- [Web Site Name](http://url.link.goes.here)
+- [ChatGPT](https://openai.com)
 - [Web Site Name](http://url.link.goes.here)
 - [Web Site Name](http://url.link.goes.here)
 
