@@ -1,0 +1,6 @@
+# ninja log v6
+1	276	1720653118921666792	CMakeFiles/C__Project.dir/ServerAI.cpp.o	bc3f8f4fcf61f422
+1	181	1720653118921666792	CMakeFiles/C__Project.dir/ClientAI.cpp.o	cda51b45ccbefe13
+218	260	1720668412514568998	C__Project	b29e19bed2189434
+0	22	1720677148819715340	build.ninja	d5be2930a54ee094
+0	218	1720668412298569916	CMakeFiles/C__Project.dir/main.cpp.o	1ebf7d53d0774a7
