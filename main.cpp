@@ -55,18 +55,19 @@ bool CheckWin(vector<vector<char>>& board, char piece)
 {
     for (int y =0; y < height; y++)
     {
-        for (int x = 0; x < length-4; x++)
+        for (int x = 0; x < length - 4; x++)
         {
             if (board[y][x] == piece && board[y][x+1] == piece && board[y][x+2] == piece && board[y][x+3])
             {
+                cout << "Horizontal win at: (" << y << ", " << x << ")" << endl;
                 return true;
             }
         }
     }
 
-    for (int y =0; y < height; y++)
+    for (int y =0; y < height - 4; y++)
     {
-        for (int x = 0; x < length-4; x++)
+        for (int x = 0; x < length; x++)
         {
             if (board[y][x] == piece && board[y+1][x] == piece && board[y+2][x] == piece && board[y+3][x])
             {
@@ -75,9 +76,9 @@ bool CheckWin(vector<vector<char>>& board, char piece)
         }
     }
 
-    for (int y =0; y < height; y++)
+    for (int y =0; y < height - 4; y++)
     {
-        for (int x = 0; x < length-4; x++)
+        for (int x = 0; x < length - 4; x++)
         {
             if (board[y][x] == piece && board[y+1][x+1] == piece && board[y+2][x+2] == piece && board[y+3][x+3])
             {
@@ -86,11 +87,11 @@ bool CheckWin(vector<vector<char>>& board, char piece)
         }
     }
 
-    for (int y =0; y < height; y++)
+    for (int y = 3; y < height; y++)
     {
-        for (int x = 0; x < length-4; x++)
+        for (int x = 0; x < length - 4; x++)
         {
-            if (board[y][x] == piece && board[y-1][x+1] == piece && board[y-2][x+2] == piece && board[y+-3][x+3])
+            if (board[y][x] == piece && board[y-1][x+1] == piece && board[y-2][x+2] == piece && board[y-3][x+3])
             {
                 return true;
             }
@@ -117,7 +118,7 @@ int main()
     {
         Display(board);
 
-        cout << "Select a column between 0-"<<length-1<<endl;
+        cout << "Select a column between 1-"<<length-1<<endl;
         cin >> column;
 
         if (column == -1)
@@ -136,12 +137,12 @@ int main()
             //     cout << "Column is full. Try again!" << endl;
             //     continue;
             // }
-            // if (CheckWin(board, piece))
-            // {
-            //     Display(board);
-            //     cout << "Congrats player" << piece << "you won!" << endl;
-            //     break;
-            // }
+            if (CheckWin(board, piece))
+            {
+                Display(board);
+                cout << "Congrats player" << piece << "you won!" << endl;
+                break;
+            }
         }
 
         piece = (piece == 'X') ? 'O' : 'X';
