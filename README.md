@@ -3,6 +3,7 @@
 This C++ Connect 4 project involves developing a console-based game with functionalities for board creation, piece placement, and win condition verification. It includes dynamic board resizing, user input validation, and a game loop ensuring continuous play until a win or quit condition is met, providing an interactive gaming experience.
 
 [Software Demo Video](https://youtu.be/dm_SJ--psF0)
+[Software Demo Video (Part 2)](https://youtu.be/92XatmxxY-I)
 
 # Development Environment
 
