@@ -57,6 +57,7 @@ bool PlacePiece(vector<vector<char>>& board, int column, char piece)
     return false;
 }
 
+// ChatGPT assisted in corrections
 bool CheckWin(vector<vector<char>>& board, char piece)
 {
     // Horizontal Win
@@ -140,7 +141,7 @@ int main()
             column = stoi(input);
         } catch (exception& e)
         {
-            cout << "Invalid input. None integer input entered. Try again." << endl;
+            cout << "Invalid integer input. Try again." << endl;
             continue;
         }
 
@@ -148,6 +149,7 @@ int main()
         {
             break;
         }
+        // ChatGPT test
         else if (column <= 0 || column >= length) {
             cout << "Invalid input. Please try again!" << endl;
             continue;
